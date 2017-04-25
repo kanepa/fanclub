@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/fan.css"/>
+
+		<style type="text/css">
+		.imgStyle
+		{
+			height: 100px;
+			width:237px;
+			border: 3px solid grey;
+		}
+		</style>
+
+
+	</head>
+	<body>
+		<p> John Kane Photo graphs </p>
+
+		<button onclick="document.getElementById('hammy').src='img/ham bw.jpg'">Black and White</button>
+
+<button onclick="document.getElementById('hammy').src='img/ham process.jpg'">Process</button>
+
+<button onclick="document.getElementById('hammy').src='img/ham.jpg'">Colour</button>
+
+
+		<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+			<div class="thumbnail">
+			<img id = "hammy" src="img/ham.jpg">
+		</div>
+
+		<div class="row">
+		
+		<div class="col-md-4">
+		
+			<img id="myImage" src="img/trees.jpg">
+		</div>
+
+		<div class="col-md-4">
+		
+			<img id="rangers" src="img/church.jpg">
+			</div>
+
+			<div class="col-md-4">
+
+			<div id="Basement" style="width:90%;margin:auto;">
+    <button onClick="fadeOut()">Press to Fade</button>
+    
+
+   <!--  <img id="tree" src="img/trees.jpg"> -->
+    <div style="width:100%;" id="FadeBox"> 
+    <button onclick="document.getElementById('tree').src='img/trees BW.jpg'">Black and White</button>
+
+      <button onclick="document.getElementById('tree').src='img/trees process.jpg'">Process</button>
+
+      <button onclick="document.getElementById('tree').src='img/trees.jpg'">Colour</button>
+
+     
+    
+  <img id="tree"src="img/trees.jpg">
+   
+
+	
+    </div>
+    
+    
+		</div>
+
+		
+		
+
+		</div>
+
+		</div>
+		
+		
+		<img height="540px" width="1200px" style="border:3px solid grey" src="img/roney.jpg" id="mainImage"/>
+		<br />
+		<div id="thumbs" onclick="changeImage(event)">
+			<img class="imgStyle" src="img/perth.jpg">
+			<img class="imgStyle" src="img/dublin.jpg">
+			<img class="imgStyle" src="img/woods.jpg">
+			<img class="imgStyle" src="img/ham bw.jpg">
+			<img class="imgStyle" src="img/roney.jpg">
+
+		</div>
+
+		<script src="js/fan.js"></script>
+		
+		
+
+
+
+		
+		
+	</body>
+</html>
