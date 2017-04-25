@@ -51,3 +51,18 @@ function FadeIn() {
 			document.getElementById("mainImage").src = targetElement.getAttribute("src");
 		}
 	}
+
+	function changeColourOver()
+	{
+		var control = document.getElementById("colour");
+		control.style.background = 'red';
+		control.style.color = 'yellow'
+	}
+
+	function changeColourOut()
+	{
+		var control = document.getElementById("colour");
+		control.style.background = 'black';
+		control.style.color = 'white'
+	}
+
