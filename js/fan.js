@@ -2,7 +2,7 @@
 
 		var element = document.getElementById("FadeBox");
 var duration = 3000;  /* fade duration in millisecond */
-var hidtime = 2000; /* time to stay hidden */
+var hidtime = 100; /* time to stay hidden */
 var showtime = 2000; /* time to stay visible */
 
 function SetOpa(Opa) {
