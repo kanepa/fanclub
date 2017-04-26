@@ -5,69 +5,86 @@
 		<link rel="stylesheet" href="css/fan.css"/>
 
 		<style type="text/css">
-		.imgStyle
-		{
-			height: 100px;
-			width:237px;
-			border: 3px solid grey;
-		}
+		
 		</style>
 
 
 	</head>
 	<body>
-		<p> John Kane Photo graphs </p>
 
-		<button onclick="document.getElementById('hammy').src='img/ham bw.jpg'" id="colour" onmouseover="changeColourOver()" onmouseout="changeColourOut()" ">Black and White</button>
+	<div class ="container">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
 
-<button onclick="document.getElementById('hammy').src='img/ham process.jpg'">Process</button>
+		<p> John Kane Photo Graphs website</p>
 
-<button onclick="document.getElementById('hammy').src='img/ham.jpg'">Colour</button>
+				</div>
+			</div>
+
+		</nav>
+
+
+
+		<div class="btn-group" role="group" aria-label="...">
+
+		<button type="button" class="btn btn-default" onclick="document.getElementById('hammy').src='img/ham bw.jpg'" id="colour" onmouseover="changeColourOver()" onmouseout="changeColourOut()" ">Black and White</button>
+
+		<button type="button" class="btn btn-default" onclick="document.getElementById('hammy').src='img/ham process.jpg'">Process</button>
+
+		<button type="button" class="btn btn-default" onclick="document.getElementById('hammy').src='img/ham.jpg'">Colour</button>
+
+		</div>
+
 
 
 		<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-12">
-			<div class="thumbnail">
-			<img id = "hammy" src="img/ham.jpg">
-		</div>
-
-		<div class="row">
-		
-		<div class="col-md-4">
-		
-			<img id="myImage" src="img/trees.jpg">
-		</div>
-
-		<div class="col-md-4">
-		
-			<img id="rangers" src="img/church.jpg">
+			<div class="row">
+				<div class="col-md-12">
+				<div class="thumbnail">
+				<img id = "hammy" src="img/ham.jpg">
 			</div>
 
-			<div class="col-md-4">
+			<div class="row">
+		
+				<div class="col-md-6">
+		
+					<img id="myImage" src="img/trees.jpg">
+				</div>
 
-			<div id="Basement" style="width:90%;margin:auto;">
-    <button onClick="fadeOut()">Press to Fade</button>
+				<!-- <div class="col-md-3">
+		
+					<img id="myImage" src="img/church.jpg">
+				</div> -->
+
+				
+
+				<div class="col-md-6">
+
+
+
+					<!-- <div id="Basement" style="width:90%;margin:auto;"> -->
+    					<button type="button" class="btn btn-default" onClick="fadeOut()">Press to Fade out</button>
     
 
-   <!--  <img id="tree" src="img/trees.jpg"> -->
-    <div style="width:100%;" id="FadeBox"> 
-    <button onclick="document.getElementById('tree').src='img/trees BW.jpg'">Black and White</button>
+   
+    					<div style="width:100%;" id="FadeBox"> 
+    						<button type="button" class="btn btn-default"onclick="document.getElementById('tree').src='img/london BW.jpg'">Black and White</button>
 
-      <button onclick="document.getElementById('tree').src='img/trees process.jpg'">Process</button>
+      					<button type="button" class="btn btn-default" onclick="document.getElementById('tree').src='img/london process .jpg'">Process</button>
 
-      <button onclick="document.getElementById('tree').src='img/trees.jpg'">Colour</button>
+      					<button type="button" class="btn btn-default" onclick="document.getElementById('tree').src='img/london.jpg'">Colour</button>
 
      
     
-  <img id="tree"src="img/trees.jpg">
+  							<img id="tree" src="img/london.jpg">
    
 
 	
-    </div>
+    			</div>
     
     
-		</div>
+			</div>
 
 		
 		
@@ -76,6 +93,7 @@
 
 		</div>
 		
+		</div>
 		
 		<img height="540px" width="1200px" style="border:3px solid grey" src="img/roney.jpg" id="mainImage"/>
 		<br />
@@ -87,6 +105,37 @@
 			<img class="imgStyle" src="img/roney.jpg">
 
 		</div>
+
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-4 col-sm-6 ">
+					<a href="img/london.jpg" class="thumbnail" id="lennon">
+					<p> London</p>
+					<img src="img/london.jpg" id="lennon">
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<a href="img/perth.jpg" class="thumbnail" id="lennon">
+					<p> Perth</p>
+					<img src="img/perth.jpg" id="lennon">
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<a href="img/trees BW.jpg" class="thumbnail" id="lennon">
+					<p> Lids</p>
+					<img src="img/trees BW.jpg" id="lennon">
+					</a>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<a href="img/church.jpg" class="thumbnail" id="lennon">
+					<p> Evening</p>
+					<img src="img/church.jpg">
+					</a>
+				</div>
+			<div>		
+		</div>		
+
 
 		<script src="js/fan.js"></script>
 		
